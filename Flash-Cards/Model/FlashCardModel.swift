@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct FlashCard: Identifiable {
+struct FlashCardModel: Identifiable {
     let id = UUID()
     
     let topic: String
     let topicDecription: String
     let topicImageName: ImageResource
-    let questionModels: [Question]
+    let questionModels: [QuestionModel]
     
     var numberOfQuestions: Int {
         questionModels.count

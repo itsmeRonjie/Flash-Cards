@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Question: Identifiable {
+struct QuestionModel: Identifiable {
     let id = UUID()
     let question: String
     let questionImageName: ImageResource?
