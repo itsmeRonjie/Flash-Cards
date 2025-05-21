@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    var flashCardViewModel = FlashCardViewModel()
+    
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("TODO!")
+            List(flashCardViewModel.flashCardModels) { flashCardModel in
+                NavigationLink {
+                    // TODO: Implement Question View
+                } label: {
+                    FlashCardItemRow(flashCardModel: flashCardModel)
+                }
             }
             .navigationTitle("Flash Cards")
         }
